@@ -2,6 +2,9 @@
    margin:0; 
 }
 
+html{
+    height:100%;
+}
 
 body{
     background-color:lightgrey;
@@ -22,10 +25,9 @@ nav{
 main{
     text-align: center;
     background-color: blue;
-    height:85%;
-
+    height:calc(100% - 75px);
 }
 
 footer{
-
+    height:75px;
 }
