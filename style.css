@@ -1,0 +1,17 @@
+:root {
+    --black: #303030;
+    --grey: #363636;
+    --green: #6fab8a;
+    --red: #d47866;
+    --deepred: #ab4430;
+    --lightgrey: #ababab;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100&display=swap');
+
+body {
+    background-color: var(--black);
+    color: var(--lightgrey);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
