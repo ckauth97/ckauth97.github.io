@@ -1,16 +1,25 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if(document.body.scrollTop > 550 || document.documentElement.scrollTop > 550){
+
+    console.log("Calc: " + (document.documentElement.clientHeight - 180)) //180
+    console.log("Top: " + document.documentElement.scrollTop)
+
+    if (
+        document.body.scrollTop >= 400 ||
+        document.documentElement.scrollTop >= 400) {
+        document.getElementById("header").style.position = "fixed";
+        document.getElementById("header").style.top = "0";
+        document.getElementById("header").style.backgroundColor = "transparent";
+        // document.getElementById("header").style.fontSize = "100px";
         document.getElementById("header").style.fontSize = "50px";
         document.getElementById("header").style.backgroundColor = "var(--black)";
-    } else if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { 
-        document.getElementById("header").style.position = "fixed";
-        document.getElementById("header").style.backgroundColor = "transparent";
+    }
+
+    else {
         document.getElementById("header").style.fontSize = "100px";
-    } else {
-    document.getElementById("header").style.fontSize = "100px";
-    document.getElementById("header").style.position = "relative";
-    document.getElementById("header").style.backgroundColor = "transparent";
-  }
+        document.getElementById("header").style.position = "relative";
+        document.getElementById("header").style.backgroundColor = "transparent";
+    }
+
 } 
