@@ -12,7 +12,19 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle"
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#ff0000'
+        },
+        polygon: {
+          nb_sides: 5
+        },
+        image: {
+          src: '',
+          width: 100,
+          height: 100
+        }
       },
       "opacity": {
         "value": 0.4,
@@ -55,20 +67,50 @@ particlesJS('particles-js',
         }
       }
     },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "resize": true
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: {
+          enable: false,
+          mode: 'grab'
+        },
+        onclick: {
+          enable: false,
+          mode: 'push'
+        },
+        resize: true
       },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
+      modes: {
+        grab: {
+          distance: 100,
+          line_linked: {
+            opacity: 1
           }
+        },
+        bubble: {
+          distance: 200,
+          size: 80,
+          duration: 0.4
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4
+        },
+        push: {
+          particles_nb: 4
+        },
+        remove: {
+          particles_nb: 2
         }
-      }
+      },
+      mouse: {}
     },
-    "retina_detect": true
+    retina_detect: false,
+    fn: {
+      interact: {},
+      modes: {},
+      vendors: {}
+    },
+    tmp: {}
   }
 );
