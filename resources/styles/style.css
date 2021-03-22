@@ -5,6 +5,7 @@
   --red: #d47866;
   --deepred: #ab4430;
   --lightgrey: #fafafa;
+  --hovergrey: #dddddd;
 }
 
 html {
@@ -83,6 +84,29 @@ h1 {
   text-align: center;
   width: 400px;
   height: 300px;
+}
+
+.box:hover {
+  background-color: var(--hovergrey);
+  color: var(--black);
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  width: 115px;
+  height: 25px;
+  background: #6d6d6d;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 .title {

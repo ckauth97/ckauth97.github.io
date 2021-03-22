@@ -1,9 +1,9 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = () => scrollFunction();
 
 function scrollFunction() {
 
-    console.log("Calc: " + (document.documentElement.clientHeight - 180)) //180
-    console.log("Top: " + document.documentElement.scrollTop)
+    // console.log("Calc: " + (document.documentElement.clientHeight - 180)) //180
+    // console.log("Top: " + document.documentElement.scrollTop)
 
     if (
         document.body.scrollTop >= 400 ||
@@ -22,4 +22,7 @@ function scrollFunction() {
         document.getElementById("header").style.backgroundColor = "transparent";
     }
 
-} 
+}
+
+
+
