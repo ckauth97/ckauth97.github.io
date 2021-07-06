@@ -15,9 +15,9 @@ const site_content = {
 	},
 	"flaptrack": {
 		"title": "FlapTrack",
-		"blurb": "A Flapdooles Icecream Flavor Tracker",
+		"blurb": "A Flapdoodles Ice Cream Flavor Tracker",
 		"modal_content": {
-			"header": "Flaptrack",
+			"header": "FlapTrack",
 			"description": "A webapp that allows enrolled users to view icecream flavors, submit which ones they have tried, and see stats based on others' reviews.",
 			"actions": [
 				{
